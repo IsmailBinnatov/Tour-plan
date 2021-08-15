@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Tour-Plan</title>
 </head>
@@ -99,7 +100,7 @@
                             <img src="img/star.svg" alt="Star" class="stars__image">
                             <img src="img/star.svg" alt="Star" class="stars__image">
                         </div>
-                        <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
+                        <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
                         <span class="offer hotel-info__offer">Flash Offer</span>
                     </div>
                     <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
@@ -111,10 +112,38 @@
                 </div>
 
             </div>
+            <div class="hotel-grid">
+                <div class="slider">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/slide.jpg" alt="Слайд">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1462400362591-9ca55235346a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1917&q=80" alt="Слайд">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1501018015558-ff8c02bc2758?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80" alt="Слайд">
+                        </div>
+                        </div>
+
+                    
+                        <!-- If we need navigation buttons -->
+                        <button class="slider-button slider-button--prev"></button>
+                        <button class="slider-button slider-button--next"></button>
+                    </div>
+                </div>
+                <!-- /.slider -->
+            </div>
         </div>
         <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 
