@@ -556,7 +556,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background: #fff;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   padding: 0 62px 30px;
   border-radius: 8px;
@@ -722,7 +722,7 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .slider {
+  .hotel-slider {
     width: 100%;
   }
   .swiper-slide__img {
@@ -733,6 +733,9 @@ img {
   }
   .map {
     width: 340px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
