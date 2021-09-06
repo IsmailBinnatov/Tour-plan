@@ -96,12 +96,12 @@
             &__offer
                 order: -1
                 margin-left: 0
-    .slider
-        height: 350px
     .hotel
         &-right
             flex-direction: column
             min-height: 450px
+        &-slider
+            height: 350px
     .booking
         width: 100%
     .map
@@ -112,14 +112,28 @@
             max-width: 576px
             width: 92% 
             align-items: flex-start
+    .reviews
+        &-slider
+            &__item
+                padding: 0 30px 30px
+                &::after, &::before
+                    display: none
+            &__button
+                top: 32px
+                &--prev
+                    margin-left: -70px
+                    left: 50%
+                    transform: translate(-50%, 0)
+                &--next
+                    margin-right: -70px
+                    right: 50%
+                    transform: translate(50%, 0)
                 
                 
 @media (max-width: 576px)
     .navbar
         &-logo
             width: 99px
-    .slider
-        height: 250px
     .newsletter
         &__title
             margin-bottom: 35px
@@ -127,3 +141,6 @@
             font-size: 20px
         &__strong
             font-size: 30px
+    .hotel
+        &-slider
+            height: 250px
