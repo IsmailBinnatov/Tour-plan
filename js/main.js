@@ -1,4 +1,6 @@
-const hotelSwiper = new Swiper('.hotel-slider', {
+$(document).ready(function () {
+  
+  const hotelSwiper = new Swiper('.hotel-slider', {
 
     // Optional parameters
     direction: 'horizontal',
@@ -60,3 +62,25 @@ var menuButton = document.querySelector('.menu-button')
 menuButton.addEventListener('click', function() {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible')
 })
+
+var modalButton = $('[data-toggle="modal"]')
+var modalButtonClose = $('.modal__close')
+  modalButton.on('click', openModal)
+  modalButtonClose.on('click', closeModal)
+
+  function openModal() {
+    var targetModal = $(this).attr('data-href')
+    var modalOverlay = $('.modal__overlay')
+    var modalDialog = $('.modal__dialog')
+    $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible')
+    $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible')
+  }
+
+  function closeModal(e) {
+    e.preventDefault()
+    var modalOverlay = $('.modal__overlay')
+    var modalDialog = $('.modal__dialog')
+    modalOverlay.removeClass('modal__overlay--visible')
+    modalDialog.removeClass('modal__dialog--visible')
+  }
+});
