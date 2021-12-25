@@ -1415,6 +1415,9 @@ img {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .modal__overlay, .modal__dialog {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 300px) {
