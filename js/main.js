@@ -83,4 +83,22 @@ var modalButtonClose = $('.modal__close')
     modalOverlay.removeClass('modal__overlay--visible')
     modalDialog.removeClass('modal__dialog--visible')
   }
+
+  $('.form').each(function () { 
+    $(this).validate({
+     errorClass: 'invalid',
+     messages: {
+      name: "Укажите ваше Имя",
+      email: {
+        required: "Введите почту для связи",
+        email: "Почта должна быть похоже на: name@domain.com"
+      },
+      phone: {
+        required: 'Укажите номер для связи'
+      },
+     },
+    });
+  })
+  
+
 });
