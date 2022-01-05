@@ -98,7 +98,6 @@ var modalButtonClose = $('.modal__close')
       },
      },
     });
-  })
-  
-
+  });
+  AOS.init();
 });

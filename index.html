@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Tour-Plan</title>
 </head>
@@ -16,23 +17,23 @@
     <header class="navbar navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-top"><!-- Обертка -->
-                <a href="#" class="navbar-logo">
+                <a href="#" class="navbar-logo" data-aos="fade-right" data-aos-delay="100">
                     <img src="img/horizontal-logo.svg" alt="Логотип сайта" class="navbar-logo__image">
                 </a>
 
-                <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+                <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-right" data-aos-delay="200">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img/search.svg" alt="Icon: search"> 
                     </button>
                 </form>
 
-                <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+                <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="300">
                     <img src="img/user.jpg" alt="Аватар пользователя: Nathan" class="user__avatar">
                     <span class="user__name">Nathan</span>
                 </a>
 
-                <button class="menu-button navbar-top__menu-button">
+                <button class="menu-button navbar-top__menu-button" data-aos="fade-right" data-aos-delay="100">
                     <span class="menu-button__line"></span>
                     <span class="menu-button__line"></span>
                     <span class="menu-button__line"></span>
@@ -301,7 +302,7 @@
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities-wrapper">
 
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-right" data-aos-delay="200">
                     <img src="img/activities/actv1.jpg" alt="The curious corner 
                     of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner 
@@ -309,7 +310,7 @@
                     <button class="card__button">Book Now</button>
                 </div>
                 <!-- /.card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-right" data-aos-delay="400">
                     <img src="img/activities/actv2.jpg" alt="Gymkhana club golf
                     course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf
@@ -317,7 +318,7 @@
                     <button class="card__button">Book Now</button>
                 </div>
                 <!-- /.card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-right" data-aos-delay="600">
                     <img src="img/activities/actv3.jpg" alt="Tamarind falls hiking
                     trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking
@@ -325,7 +326,7 @@
                     <button class="card__button">Book Now</button>
                 </div>
                 <!-- /.card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-right" data-aos-delay="800">
                     <img src="img/activities/actv4.jpg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
                     <button class="card__button">Book Now</button>
@@ -523,6 +524,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
